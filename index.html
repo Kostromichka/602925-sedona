@@ -14,8 +14,8 @@
         </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
-        <li><a href="photos.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -61,18 +61,18 @@
         </li>
         <li>
           <ul class="advices">
-            <li class="advices">
+            <li class="advices-item">
               <img src="img/icon-1.svg" width="85" height="85" alt="Домик">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="advices">
-              <img src="img/icon-2.svg" width="85" height="85" alt="Бургер">
+            <li class="advices-item">
+              <img src="img/icon-3.svg" width="85" height="85" alt="Бургер">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
-            <li class="advices">
-              <img src="img/icon-3.svg" width="85" height="85" alt="Сувенир">
+            <li class="advices-item">
+              <img src="img/icon-2.svg" width="85" height="85" alt="Сувенир">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
@@ -97,16 +97,14 @@
           </label>
         </p>
         <p class="search-text number">
-          <label>Взрослые
-            <span class="minus">-</span>
-            <input type="text" name="number-adults" value="2">
-            <span class="plus">+</span>
-          </label>
-          <label>Дети
-            <span class="minus">-</span>
-            <input type="text" name="number-adults" value="0">
-            <span class="plus">+</span>
-          </label>
+          <label for="number-adults">Взрослые</label>
+          <button type="button" class="minus">-</button>
+          <input type="text" name="number-adults" value="2" id="number-adults">
+          <button type="button" class="plus">+</button>
+          <label for="number-children">Дети</label>
+          <button type="button" class="minus">-</button>
+          <input type="text" name="number-children" value="0" id="number-children">
+          <button type="button" class="plus">+</button>
         </p>
         <button type="submit">Найти</button>
       </form>
@@ -115,7 +113,7 @@
   </main>
   <footer class="main-footer">
     <div class="footer-instagram">
-      <a class="footer-instagram" target="_blank" href="http://instagram.com">#VISITSEDONA</a>
+      <a class="text-instagram" target="_blank" href="http://instagram.com">#VISITSEDONA</a>
     </div>
     <div class="footer-social">
       <ul>

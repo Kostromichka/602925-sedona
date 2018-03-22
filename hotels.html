@@ -14,8 +14,8 @@
         </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
-        <li><a href="photos.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
         <li class="current-page"><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -64,11 +64,11 @@
           <label class="price-from">ОТ
             <input type="text" class="price" name="price-from" value="0">
           </label>
-          <label class="price-to">ОТ
+          <label class="price-to">ДО
             <input type="text" class="price" name="price-to" value="3000">
           </label>
           <div class="scale">
-          </div>  
+          </div>
           <button type="submit">Показать</button>
         </fieldset>
       </form>
@@ -78,13 +78,13 @@
       <p>Найдено:<span>3</span></p>
       <h3>Сортировка</h3>
       <ul class="sort-type">
-        <li><a href="hotels.html/sort-price">По цене</a></li>
-        <li><a href="hotels.html/sort-type">По типу</a></li>
-        <li><a href="hotels.html/sort-ranking">По рейтингу</a></li>
+        <li><a href="hotels.html?sort=price">По цене</a></li>
+        <li><a href="hotels.html?sort=type">По типу</a></li>
+        <li><a href="hotels.html?sort=ranking">По рейтингу</a></li>
       </ul>
       <ul class="sorting-arrows">
-        <li><a href="hotels.html/up" class="arrow-up"></a>
-          <li><a href="hotels.html/down" class="arrow-down"></a>
+        <li><a href="hotels.html/up" class="arrow-up"></a></li>
+        <li><a href="hotels.html/down" class="arrow-down"></a></li>
       </ul>
     </section>
     <section class="catalog-find">
@@ -102,8 +102,7 @@
             </div>
           </div>
           <div class="item-ranking">
-            <div class="stars">
-              <p class="visually-hidden">4 звезды</p>
+            <div class="stars" aria-label="4 звезды">
               <img src="img/star.svg" alt="звезда">
               <img src="img/star.svg" alt="звезда">
               <img src="img/star.svg" alt="звезда">
@@ -124,8 +123,7 @@
             </div>
           </div>
           <div class="item-ranking">
-            <div class="stars">
-              <p class="visually-hidden">3 звезды</p>
+            <div class="stars" aria-label="3 звезды">
               <img src="img/star.svg" alt="звезда">
               <img src="img/star.svg" alt="звезда">
               <img src="img/star.svg" alt="звезда">
@@ -145,8 +143,7 @@
             </div>
           </div>
           <div class="item-ranking">
-            <div class="stars">
-              <p class="visually-hidden">2 звезды</p>
+            <div class="stars" aria-label="2 звезды">
               <img src="img/star.svg" alt="звезда">
               <img src="img/star.svg" alt="звезда">
             </div>
@@ -158,7 +155,7 @@
   </main>
   <footer class="main-footer">
     <div class="footer-instagram">
-      <a class="footer-instagram" target="_blank" href="http://instagram.com">#VISITSEDONA</a>
+      <a class="text-instagram" target="_blank" href="http://instagram.com">#VISITSEDONA</a>
     </div>
     <div class="footer-social">
       <ul>
