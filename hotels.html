@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +16,7 @@
           <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип города Седона">
         </a>
       <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
+        <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
         <li class="current-page"><a href="hotels.html">Гостиницы</a></li>
@@ -25,7 +28,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр поиска жилья</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="filter-checkbox">
           <legend>Инфраструктура:</legend>
           <ul class="filter bonus">
             <li class="checkbox">
@@ -42,7 +45,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-checkbox">
           <legend>Тип жилья:</legend>
           <ul class="filter type-hotel">
             <li class="checkbox">
@@ -59,7 +62,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-range">
           <legend>Стоимость в сутки (Р):</legend>
           <label class="price-from">ОТ
             <input type="text" class="price" name="price-from" value="0">
@@ -75,16 +78,16 @@
     </section>
     <section class="catalog-listing">
       <h2 class="visually-hidden">Сортировка результатов поиска</h2>
-      <p>Найдено:<span>3</span></p>
+      <p class="text-big">Найдено:<span>3</span></p>
       <h3>Сортировка</h3>
       <ul class="sort-type">
-        <li><a href="hotels.html?sort=price">По цене</a></li>
+        <li class="active"><a href="hotels.html?sort=price">По цене</a></li>
         <li><a href="hotels.html?sort=type">По типу</a></li>
         <li><a href="hotels.html?sort=ranking">По рейтингу</a></li>
       </ul>
       <ul class="sorting-arrows">
-        <li><a href="hotels.html/up" class="arrow-up"></a></li>
-        <li><a href="hotels.html/down" class="arrow-down"></a></li>
+        <li><a href="hotels.html?sort=up" class="arrow-up"></a></li>
+        <li><a href="hotels.html?sort=down" class="arrow-down"></a></li>
       </ul>
     </section>
     <section class="catalog-find">

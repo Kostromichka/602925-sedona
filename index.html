@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +16,7 @@
           <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип города Седона">
         </a>
       <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
+        <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
@@ -26,12 +29,12 @@
       <h2 class="visually-hidden">Презентация Седоны</h2>
       <img src="img/slider.jpg" width="1200" height="800" alt="Вид окрестностей города Седона - каньоны">
       <img src="img/textSedona.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
-      <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="text-big">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества Седоны</h2>
-      <ul class="advantages">
+      <ul class="advantages-list">
         <li class="advantages image-right">
           <h3>Настоящий городок</h3>
           <p class="advantages-number">№1</p>
@@ -59,7 +62,7 @@
           <p class="advantages-number">№5</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-        <li>
+        <li class="advantages">
           <ul class="advices">
             <li class="advices-item">
               <img src="img/icon-1.svg" width="85" height="85" alt="Домик">
@@ -82,9 +85,9 @@
     </section>
     <section class="search-hotel">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p>Заинтересовались?</p>
+      <p class="title-search">Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <button type="button" class="button hotel-button">Поиск гостиницы в Седоне</button>
       <form class="search" action="https://echo.htmlacademy.ru" method="post">
         <p class="search-text">
           <label>Дата заезда
@@ -106,7 +109,7 @@
           <input type="text" name="number-children" value="0" id="number-children">
           <button type="button" class="plus">+</button>
         </p>
-        <button type="submit">Найти</button>
+        <button type="submit" class="button find-hotel">Найти</button>
       </form>
       <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
     </section>
