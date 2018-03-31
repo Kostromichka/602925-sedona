@@ -29,10 +29,9 @@
       <section class="presentation">
         <h2 class="visually-hidden">Презентация Седоны</h2>
         <div class="main-image">
-          <img src="img/slider.jpg" width="1200" height="800" alt="Вид окрестностей города Седона - каньоны">
-          <img src="img/textSedona.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+          <img class="main-image-background" src="img/slider.jpg" width="1200" height="800" alt="Вид окрестностей города Седона - каньоны">
+          <img class="main-image-text" src="img/textSedona.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
         </div>
-        <div class="main-image-border"></div>
         <div class="text-intro">
           <p class="text-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -105,30 +104,36 @@
         <div class="search-hotel-text">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="title-search">Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="text-search">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button type="button" class="button hotel-button">Поиск гостиницы в Седоне</button>
         </div>
         <div class="search-form">
           <form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <p class="search-text">
-              <label>Дата заезда
+            <p class="search-text-date">
+              <label for="date-in">Дата заезда</label>
               <input type="text" name="date-in" value="24 апреля 2017">
-          </label>
             </p>
-            <p class="search-text">
-              <label>Дата выезда
-            <input type="text" name="date-out" value="4 июля 2017">
-          </label>
+            <p class="search-text-date">
+              <label for="date-out">Дата выезда</label>
+              <input type="text" name="date-out" value="4 июля 2017">
             </p>
-            <p class="search-text number">
-              <label for="number-adults">Взрослые</label>
-              <button type="button" class="minus">-</button>
-              <input type="text" name="number-adults" value="2" id="number-adults">
-              <button type="button" class="plus">+</button>
-              <label for="number-children">Дети</label>
-              <button type="button" class="minus">-</button>
-              <input type="text" name="number-children" value="0" id="number-children">
-              <button type="button" class="plus">+</button>
+            <p class="search-text-number">
+              <div class="wrap-adults">
+                <label for="number-adults">Взрослые</label>
+                <div class="wrap-button-number">
+                  <button type="button" class="minus"></button>
+                  <input type="text" name="number-adults" value="2" id="number-adults">
+                  <button type="button" class="plus"></button>
+                </div>
+              </div>
+              <div class="wrap-children">
+                <label for="number-children">Дети</label>
+                <div class="wrap-button-number">
+                  <button type="button" class="minus"></button>
+                  <input type="text" name="number-children" value="0" id="number-children">
+                  <button type="button" class="plus"></button>
+                </div>
+              </div>
             </p>
             <button type="submit" class="button find-hotel">Найти</button>
           </form>
