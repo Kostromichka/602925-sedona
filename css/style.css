@@ -676,6 +676,10 @@ img {
   background-color: #eff6e6;
 }
 
+.search-map iframe {
+  border: none;
+}  
+
 /*футер*/
 
 .text-instagram {
