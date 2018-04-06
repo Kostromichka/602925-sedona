@@ -802,6 +802,7 @@ section.filters {
   background-image: url("../img/filter-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
 
