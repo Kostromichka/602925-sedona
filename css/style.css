@@ -381,7 +381,9 @@ img {
   background-repeat: no-repeat;
   top: -72px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .advices-item:first-child h3::before {
@@ -763,10 +765,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-copyright {
@@ -777,7 +782,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 33.3%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text-copyright {
@@ -1097,7 +1104,8 @@ input:disabled + .label-checkbox::before {
       -ms-flex-align: center;
           align-items: center;
   min-width: 238px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sort-type li {
